@@ -1,0 +1,66 @@
+name: "Wanted: a data packet I need"
+description: Tell sellers what data you need. Sellers watch this label; fulfilled requests are featured in the plugin.
+title: "Wanted: "
+labels: ["wanted-packet"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Name the **thing**, not the question — "Ohio dental board licensee roster, monthly", not "how do I check a dentist".
+  - type: textarea
+    id: what
+    attributes:
+      label: What data
+      description: Fields you need, granularity, coverage (time and geography).
+      placeholder: "Per state × profession: licensee number, status, expiry, discipline flag, source URL per record. 50 states. Monthly."
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: What task it serves
+      description: The job your agent or team does with it. Sellers use this to shape the packet.
+      placeholder: "Verify a provider's license is active before onboarding."
+    validations:
+      required: true
+  - type: input
+    id: freshness
+    attributes:
+      label: Freshness needed
+      placeholder: "Monthly snapshot is fine; daily would be better."
+  - type: dropdown
+    id: rights
+    attributes:
+      label: Rights you need
+      multiple: true
+      options:
+        - Use internally
+        - Redistribute to my users / customers
+        - Train or fine-tune models on it
+        - Commercial use
+        - Attribution is fine
+    validations:
+      required: true
+  - type: input
+    id: format
+    attributes:
+      label: Format preference
+      placeholder: "CSV or Parquet; JSON also fine"
+  - type: dropdown
+    id: pay
+    attributes:
+      label: Would you pay for it?
+      options:
+        - Free only
+        - One-time, up to $100
+        - One-time, up to $1,000
+        - One-time, more than $1,000
+        - Monthly plan
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: How a seller can reach you (optional)
+      description: Leave blank to keep it in this thread.

@@ -1,0 +1,242 @@
+{
+  "$schema_note": "Pinned upstream artifacts for packets/build.py. sha256 values are verified after download; license_files sha256 values are verified after extraction so a license change upstream fails the build.",
+  "generated_from": "registry metadata and artifacts inspected on 2026-09-21",
+  "sources": {
+    "holidays": {
+      "kind": "pypi",
+      "package": "holidays",
+      "version": "0.104",
+      "role": "data",
+      "filename": "holidays-0.104-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/63/63/e6d7af3e7cd7ce095aee210204fce64b2ce5164c0c3c79d70e335837886c/holidays-0.104-py3-none-any.whl",
+      "sha256": "e0db9ff1d5588e3349bf2de6a597421e39cb7299b64a015170a0a0886940c384",
+      "published": "2026-09-07T17:49:28Z",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "holidays-0.104.dist-info/licenses/LICENSE",
+          "sha256": "a9a45b34c5338850f987329f35102934ec96d2b3a44563998bccc01bd9c9e3e9"
+        },
+        {
+          "path": "holidays-0.104.dist-info/licenses/CONTRIBUTORS",
+          "sha256": "f7d9e2dc5a4617036dcf257c0108bdbe2167b3964bdbe15151379171f206b4ef"
+        }
+      ],
+      "upstream": "Vacanza Team — holidays (Open World Holidays Framework); holiday rules are encoded by the project from official gazettes and government sources",
+      "homepage": "https://github.com/vacanza/holidays",
+      "notes": "Wheel imported at build time to generate calendars; requires python-dateutil and six at runtime."
+    },
+    "python-dateutil": {
+      "kind": "pypi",
+      "package": "python-dateutil",
+      "version": "2.9.0.post0",
+      "role": "runtime",
+      "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "published": "2024-03-01T18:36:18Z",
+      "license": "Apache-2.0 OR BSD-3-Clause",
+      "license_files": [
+        {
+          "path": "python_dateutil-2.9.0.post0.dist-info/LICENSE",
+          "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+        }
+      ],
+      "upstream": "dateutil project",
+      "homepage": "https://github.com/dateutil/dateutil",
+      "notes": "Runtime dependency of holidays only; no data copied into packets."
+    },
+    "six": {
+      "kind": "pypi",
+      "package": "six",
+      "version": "1.17.0",
+      "role": "runtime",
+      "filename": "six-1.17.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "published": "2024-12-04T17:35:26Z",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "six-1.17.0.dist-info/LICENSE",
+          "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+        }
+      ],
+      "upstream": "six project",
+      "homepage": "https://github.com/benjaminp/six",
+      "notes": "Runtime dependency of python-dateutil only; no data copied into packets."
+    },
+    "pycountry": {
+      "kind": "pypi",
+      "package": "pycountry",
+      "version": "26.2.16",
+      "role": "data",
+      "filename": "pycountry-26.2.16-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/9c/42/7703bd45b62fecd44cd7d3495423097e2f7d28bc2e99e7c1af68892ab157/pycountry-26.2.16-py3-none-any.whl",
+      "sha256": "115c4baf7cceaa30f59a4694d79483c9167dbce7a9de4d3d571c5f3ea77c305a",
+      "published": "2026-02-17T03:42:49Z",
+      "license": "LGPL-2.1-only",
+      "license_files": [
+        {
+          "path": "pycountry-26.2.16.dist-info/licenses/LICENSE.txt",
+          "sha256": "3fa39c6e18a3a4411082b64c164deae1d8f47b03a4d45304c1f0ae478626e382"
+        },
+        {
+          "path": "pycountry/COPYRIGHT.txt",
+          "sha256": "f4b01617064bcd9e9fe3db62ec9c6ef8d0afcc388dda58d9b2935a551d7960e4"
+        }
+      ],
+      "upstream": "Debian iso-codes project (salsa.debian.org/iso-codes-team/iso-codes), which curates the ISO 3166, 4217, 639 and 15924 code lists published by their ISO maintenance agencies",
+      "homepage": "https://github.com/pycountry/pycountry",
+      "notes": "Data files pycountry/databases/*.json are read directly; the Python API is not used. The artifact does not declare which iso-codes release it vendors."
+    },
+    "us": {
+      "kind": "pypi",
+      "package": "us",
+      "version": "3.2.0",
+      "role": "data",
+      "filename": "us-3.2.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/65/a8/1791660a87f03d10a3bce00401a66035999c91f5a9a6987569b84df5719d/us-3.2.0-py3-none-any.whl",
+      "sha256": "571714ad6d473c72bbd2058a53404cdf4ecc0129e4f19adfcbeb4e2d7e3dc3e7",
+      "published": "2024-07-22T01:09:41Z",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path": "us-3.2.0.dist-info/LICENSE",
+          "sha256": "fd5bbec44e8c50a5fc4b71fad8d2b854fe9fbee519d105a2244de52ab489e841"
+        }
+      ],
+      "upstream": "python-us (unitedstates project; originally Sunlight Labs) — hand-maintained table of US state metadata; FIPS codes are those of the US Census Bureau / FIPS 5-2",
+      "homepage": "https://github.com/unitedstates/python-us",
+      "notes": "us/states.py is parsed with the ast module (no import; avoids the jellyfish dependency)."
+    },
+    "spdx-license-list": {
+      "kind": "npm",
+      "package": "spdx-license-list",
+      "version": "6.12.0",
+      "role": "data",
+      "filename": "spdx-license-list-6.12.0.tgz",
+      "url": "https://registry.npmjs.org/spdx-license-list/-/spdx-license-list-6.12.0.tgz",
+      "sha256": "54cc8d13086187333ca1457c8edaa06d9a412144f076aa7f7c1b59c4f3b0a1ef",
+      "published": "2026-07-24T13:16:11Z",
+      "license": "CC0-1.0",
+      "license_files": [
+        {
+          "path": "license",
+          "sha256": "8cd7214d7e3455e136f3298b6be7cb7e5e105cd3299cfe22e5eb12161e50432c"
+        }
+      ],
+      "upstream": "SPDX License List 3.28.0 (2026-02-20), published by the SPDX Project (Linux Foundation); repackaged by Sindre Sorhus",
+      "homepage": "https://github.com/sindresorhus/spdx-license-list",
+      "notes": "readme.md in the artifact states: \"Using SPDX License List version 3.28.0 (2026-02-20)\"."
+    },
+    "spdx-license-ids": {
+      "kind": "npm",
+      "package": "spdx-license-ids",
+      "version": "3.0.24",
+      "role": "data",
+      "filename": "spdx-license-ids-3.0.24.tgz",
+      "url": "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-3.0.24.tgz",
+      "sha256": "2ccb1debbc8a6f5c588d8bac9a0a9b2420c635ebe9a0eaccd11b6ebc4b91bd9c",
+      "published": "2026-09-17T03:50:39Z",
+      "license": "CC0-1.0",
+      "license_files": [],
+      "upstream": "SPDX License List (deprecated-identifier flags), repackaged by the jslicense project",
+      "homepage": "https://github.com/jslicense/spdx-license-ids",
+      "notes": "Used only for the deprecated flag. The tarball carries no LICENSE file; CC0-1.0 is declared in its package.json only."
+    },
+    "vvo-tzdb": {
+      "kind": "npm",
+      "package": "@vvo/tzdb",
+      "version": "6.198.0",
+      "role": "data",
+      "filename": "tzdb-6.198.0.tgz",
+      "url": "https://registry.npmjs.org/@vvo/tzdb/-/tzdb-6.198.0.tgz",
+      "sha256": "73d1a063d61ede9dcd73b0e97614cf734c1160ab3eb95ba42127ff7a8996e132",
+      "published": "2025-12-01T14:06:16Z",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "a032840da64d91bb7e59170be8b891430e62344866f23dfcc1cc60ce4dbb357d"
+        }
+      ],
+      "upstream": "IANA Time Zone Database (zone names, offsets) and GeoNames (CC BY 4.0; country and city selections); generated by the tzdb project against npm tzdata 1.0.46 = IANA 2025b",
+      "homepage": "https://github.com/vvo/tzdb",
+      "notes": "raw-time-zones.json, time-zones-names.json and abbreviations.json are read directly."
+    },
+    "tzdata-pypi": {
+      "kind": "pypi",
+      "package": "tzdata",
+      "version": "2026.4",
+      "role": "data",
+      "filename": "tzdata-2026.4-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/f9/bc/8737e8d54cf51106118039b83f485a4783112fab49ea9d044b234978a46e/tzdata-2026.4-py2.py3-none-any.whl",
+      "sha256": "c2169a8b0a7a5e9674da5a135ccdfb2b3e671b333ed9fed17b41f73c34476e81",
+      "published": "2026-09-12T12:56:01Z",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path": "tzdata-2026.4.dist-info/licenses/LICENSE",
+          "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46"
+        }
+      ],
+      "upstream": "IANA Time Zone Database release 2026d (public domain), packaged for Python by the tzdata project",
+      "homepage": "https://github.com/python/tzdata",
+      "notes": "Used to compute 2026 UTC offsets, DST flags, link targets and country tables with the stdlib zoneinfo module. No file from this package is copied into a packet."
+    },
+    "naics": {
+      "kind": "npm",
+      "package": "naics",
+      "version": "1.2.1",
+      "role": "data",
+      "filename": "naics-1.2.1.tgz",
+      "url": "https://registry.npmjs.org/naics/-/naics-1.2.1.tgz",
+      "sha256": "a9c173549c210fa7a179a1d536aabd0db55d6a0436dfab13c6722668d8b62594",
+      "published": "2020-04-22T07:22:06Z",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "2673d561d0e68b42fef74c96010de95cadbf63ca585d58a7f7affd1ad4739860"
+        }
+      ],
+      "upstream": "US Census Bureau, 2017 NAICS Descriptions (2017_NAICS_Descriptions.xlsx, census.gov/naics/2017NAICS/); NAICS is maintained by the US Office of Management and Budget",
+      "homepage": "https://github.com/ntdalbec/naics",
+      "notes": "data/2017_NAICS_Descriptions.xlsx is parsed directly with stdlib zipfile + xml; the derived JSON in the tarball is not used."
+    },
+    "world-countries": {
+      "kind": "npm",
+      "package": "world-countries",
+      "version": "5.1.0",
+      "role": "data",
+      "filename": "world-countries-5.1.0.tgz",
+      "url": "https://registry.npmjs.org/world-countries/-/world-countries-5.1.0.tgz",
+      "sha256": "329eb6ef4099ffb590219c9beb634bf489a5e4b10d8ab0ac52a58ebf7b9f8495",
+      "published": "2025-02-26T20:42:02Z",
+      "license": "ODbL-1.0",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "3e7634891f31a15d33455351b7bd59653b96045d8d8f7f7aff5c3084c798eefc"
+        }
+      ],
+      "upstream": "mledoze/countries (Mohammed Le Doze and contributors), a hand-curated database keyed on ISO 3166-1",
+      "homepage": "https://github.com/mledoze/countries",
+      "notes": "countries.json is read directly. The npm registry \"license\" field is empty; package.json carries a \"licenses\" array naming ODbL-1.0 and the tarball ships the ODbL text as LICENSE."
+    }
+  },
+  "rejected": {
+    "airport-codes": {
+      "kind": "npm",
+      "package": "airport-codes",
+      "version": "1.0.2",
+      "filename": "airport-codes-1.0.2.tgz",
+      "url": "https://registry.npmjs.org/airport-codes/-/airport-codes-1.0.2.tgz",
+      "sha256": "1c3cd16dd0cb2f0e58aa41dc338b46862544079de125bb31020c28052e9a3e7d",
+      "published_note": "files dated July 2015",
+      "declared_license": "ISC (package.json only; no LICENSE file in tarball)",
+      "reason": "Rights and provenance unclear: README says the data is \"pulled from OpenFlights.org\" and its update recipe fetches jpatokal/openflights airports.dat; OpenFlights publishes that data under ODbL 1.0 + Database Contents License with attribution and share-alike obligations, which the packager cannot relicense as ISC. The tarball also ships an airports.csv with OurAirports-style columns and no statement of origin at all. Snapshot is from 2015."
+    }
+  }
+}

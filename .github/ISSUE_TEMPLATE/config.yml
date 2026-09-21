@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Sell on Graunt
+    url: https://graunt.com/sell
+    about: What a packet is, what sellers keep, and how review works.
+  - name: Prepare a packet now
+    url: https://graunt.com/prepare
+    about: Upload files; Graunt drafts the listing; you confirm rights and price.
+  - name: Email Graunt
+    url: mailto:info@graunt.com
+    about: For anything that should not be public.

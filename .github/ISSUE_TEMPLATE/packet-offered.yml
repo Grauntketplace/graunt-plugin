@@ -1,0 +1,53 @@
+name: "Offered: a data packet I have or can build"
+description: Tell buyers what you have. Then list it with /prepare-packet or at graunt.com/prepare.
+title: "Offered: "
+labels: ["packet-offered"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you have
+      description: Fields, granularity, coverage, row count if known.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Where it comes from and what rights you hold
+      description: Sources with their licenses; whether you compiled it yourself; anything scraped. Only declare rights you actually hold.
+    validations:
+      required: true
+  - type: input
+    id: asof
+    attributes:
+      label: As-of date and refresh cadence
+      placeholder: "2026-09-01; refreshed monthly"
+    validations:
+      required: true
+  - type: dropdown
+    id: personal
+    attributes:
+      label: Personal data
+      options:
+        - None
+        - Contains personal data (public-record professional data, officers, contacts)
+        - Pseudonymised
+        - Aggregated only
+    validations:
+      required: true
+  - type: input
+    id: price
+    attributes:
+      label: Price idea
+      placeholder: "Free / one-time $X / plan $Y per month"
+  - type: input
+    id: link
+    attributes:
+      label: Draft or listing link (optional)
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Help
+      options:
+        - label: I would like Graunt to prepare the packet from my files.
+        - label: This fulfils an open wanted-packet issue (link it in a comment).
