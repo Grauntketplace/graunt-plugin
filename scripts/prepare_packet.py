@@ -40,6 +40,9 @@ import zipfile
 from pathlib import Path
 
 REQUIRED = "REQUIRED"
+# A placeholder is the skeleton form only: "REQUIRED: ..." or a bare REQUIRED table cell / line.
+# Plain prose such as "UNLESS REQUIRED BY APPLICABLE LAW" (GPL/LGPL texts pasted into RIGHTS.md) must not trip it.
+PLACEHOLDER_RE = re.compile(r"\bREQUIRED\b[ \t]*(:|\|)|(^|\|)[ \t]*REQUIRED[ \t]*$", re.M)
 MANIFEST_VERSION = "0.1"
 SAMPLE_ROWS = 5000
 DATA_EXT = {
@@ -464,7 +467,7 @@ def cmd_validate(args: argparse.Namespace) -> int:
         p = d / name
         if not p.exists():
             problems.append(f"{name} missing")
-        elif REQUIRED in p.read_text(encoding="utf-8", errors="replace"):
+        elif PLACEHOLDER_RE.search(p.read_text(encoding="utf-8", errors="replace")):
             problems.append(f"placeholder left in {name}")
 
     rights = m.get("rights", {})

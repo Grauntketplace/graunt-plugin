@@ -115,10 +115,13 @@ there.
 
 ### Seed packets: worked examples you can use or list
 
-[`packets/`](packets/) contains a reproducible build for free, rights-clean
-reference packets (public holidays, ISO code lists, SPDX license data, IANA
-time zones, US states and more), each with a manifest, checksums and a rights
-file in the format above. Built bundles are attached to the
+[`packets/`](packets/) contains a reproducible build (`python3 packets/build.py`)
+for 15 free, rights-clean reference packets: worldwide public holidays
+2025–2027, US federal holidays, financial-market holidays for 25 venues, the
+ISO 3166 / 4217 / 639 / 15924 code lists, the SPDX license list and texts,
+IANA time zones, US states and territories, world country profiles and NAICS
+2017. Each has a manifest, checksums and a rights file in the format above,
+with every source pinned by hash and every rejected source explained. Built bundles are attached to the
 [releases](https://github.com/Grauntketplace/graunt-plugin/releases). Use them
 as data, as templates for your own packets, or list improved versions.
 
