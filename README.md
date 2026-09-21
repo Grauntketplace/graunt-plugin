@@ -155,8 +155,8 @@ permission, on both the buying and the selling side.
 {
   "mcpServers": {
     "graunt": {
-      "url": "https://api.graunt.com/v1/mcp",
-      "transport": "http"
+      "type": "http",
+      "url": "https://api.graunt.com/v1/mcp"
     }
   }
 }

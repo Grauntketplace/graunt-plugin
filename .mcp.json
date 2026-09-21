@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "graunt": {
-      "url": "https://api.graunt.com/v1/mcp",
-      "transport": "http"
+      "type": "http",
+      "url": "https://api.graunt.com/v1/mcp"
     }
   }
 }
