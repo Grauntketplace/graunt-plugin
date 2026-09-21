@@ -41,7 +41,9 @@ Team or Enterprise plan.)
 
 ### Cursor
 
-[Install in Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=graunt&config=eyJ1cmwiOiJodHRwczovL2FwaS5ncmF1bnQuY29tL3YxL21jcCJ9)
+[![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=graunt&config=eyJ1cmwiOiJodHRwczovL2FwaS5ncmF1bnQuY29tL3YxL21jcCJ9)
+
+Or paste this deeplink into a browser: `cursor://anysphere.cursor-deeplink/mcp/install?name=graunt&config=eyJ1cmwiOiJodHRwczovL2FwaS5ncmF1bnQuY29tL3YxL21jcCJ9`
 — or add to `.cursor/mcp.json`:
 
 ```json
