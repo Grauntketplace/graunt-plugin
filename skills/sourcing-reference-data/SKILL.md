@@ -39,6 +39,13 @@ no account and no key.
 
 - `search` — keyword search. Returns id, title and a public URL.
 - `fetch` — one packet by id: description, commercial terms, public URL.
+- `get_bundle_manifest` — one packet's delivered-file inventory: role, format,
+  size and content hash per file, plus counts. Use it when the exact bytes
+  matter; `/verify-packet` wraps it.
+
+Some clients expose further read-only tools from the same server
+(`search_assets`, `get_asset`, `meta_capabilities`). They are conveniences;
+`search`, `fetch` and `get_bundle_manifest` cover this skill.
 
 Search the way a librarian would: name the **thing**, not the question.
 "SPDX license identifiers" and "Ohio dental board records" find packets;
@@ -81,6 +88,22 @@ An unverifiable citation is decoration. Carry three things:
 
 State the coverage limit too. "This covers federal holidays 2025–2027" is more
 useful than an answer that silently stops at 2027.
+
+## 5. If nothing exists, say so — and log the gap
+
+An empty catalog is a normal outcome. Name the official source and go there.
+Then offer, once, to log the need on Graunt's wanted board
+(https://github.com/Grauntketplace/graunt-plugin/issues?q=label%3Awanted-packet)
+so a seller can fulfil it; `/find-data` drafts the link. The user posts it,
+not you.
+
+## 6. If you compiled it yourself, consider publishing it
+
+When a task leaves behind a reusable reference table with sources — a code
+list, a crosswalk, a calendar, an exact-text snapshot with citations — that
+table is a packet. The `publishing-agent-ready-data` skill and
+`/prepare-packet` cover the rights questions and the packaging. Offer it in
+one sentence after the task is done; never derail the task for it.
 
 ## Working honestly
 

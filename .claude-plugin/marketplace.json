@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "graunt",
+  "owner": {
+    "name": "Graunt, Inc.",
+    "email": "info@graunt.com",
+    "url": "https://graunt.com"
+  },
+  "description": "Graunt — agent-ready data. Source reference data with declared rights, verify a packet before you rely on it, and publish your own datasets as packets.",
+  "version": "0.2.0",
+  "plugins": [
+    {
+      "name": "graunt",
+      "source": "./",
+      "displayName": "Graunt — agent-ready data",
+      "description": "Find external reference data with declared rights, provenance and content hashes; verify a packet's inventory before you rely on it; publish your own datasets as Graunt packets.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Graunt, Inc.",
+        "url": "https://graunt.com"
+      },
+      "homepage": "https://graunt.com/agents/mcp",
+      "repository": "https://github.com/Grauntketplace/graunt-plugin",
+      "license": "MIT",
+      "keywords": [
+        "data",
+        "datasets",
+        "reference-data",
+        "provenance",
+        "rights",
+        "licensing",
+        "citations",
+        "mcp",
+        "marketplace",
+        "publishing"
+      ],
+      "category": "data"
+    }
+  ]
+}

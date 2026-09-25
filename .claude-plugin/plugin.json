@@ -1,8 +1,8 @@
 {
   "name": "graunt",
   "displayName": "Graunt — agent-ready data",
-  "version": "0.1.0",
-  "description": "Find external reference data with declared rights, provenance and content hashes, and check it before you rely on it.",
+  "version": "0.2.0",
+  "description": "Find external reference data with declared rights, provenance and content hashes; verify a packet's inventory before you rely on it; and publish your own datasets as Graunt packets.",
   "author": {
     "name": "Graunt",
     "url": "https://graunt.com"
@@ -18,6 +18,9 @@
     "rights",
     "licensing",
     "citations",
-    "mcp"
+    "mcp",
+    "marketplace",
+    "publishing",
+    "agent-ready-data"
   ]
 }
