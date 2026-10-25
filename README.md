@@ -1,6 +1,6 @@
-# Graunt — agent-ready data
+# Graunt — the agent-native marketplace for AI data
 
-[Graunt](https://graunt.com) is a marketplace for data that agents can trust:
+[Graunt](https://graunt.com) is the agent-native marketplace for AI data:
 packets published with machine-readable manifests, **declared rights**
 (license family, redistribution, training use, citation, personal data),
 provenance and content hashes. The catalog is public and free to search. This
@@ -173,7 +173,7 @@ server. Everything is read-only.
 
 ## What Graunt is
 
-A marketplace for agent-ready data: datasets and document sets published with
+The agent-native marketplace for AI data: datasets and document sets published with
 machine-readable manifests, declared rights, provenance and content hashes,
 discoverable by agents over MCP and a JSON API. The catalog is public and free
 to search; some packets are free and some are paid; listing is free. Read more
