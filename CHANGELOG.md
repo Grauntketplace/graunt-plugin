@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+- New tagline, "the agent-native marketplace for AI data", in the README, the
+  plugin's display name and the marketplace description (was "agent-ready data").
+
 ## 0.2.0 — 2026-09-21
 
 ### Fixed
