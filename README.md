@@ -70,9 +70,13 @@ Enterprise and Edu plans.)
 | Client | Where | Snippet |
 |---|---|---|
 | Windsurf | `~/.codeium/windsurf/mcp_config.json` | `{ "mcpServers": { "graunt": { "serverUrl": "https://api.graunt.com/v1/mcp" } } }` |
+| Cline | MCP Servers → Configure → Configure MCP Servers (`cline_mcp_settings.json`) | `{ "mcpServers": { "graunt": { "type": "streamableHttp", "url": "https://api.graunt.com/v1/mcp" } } }` |
 | Codex CLI | `~/.codex/config.toml` | `[mcp_servers.graunt]`<br>`url = "https://api.graunt.com/v1/mcp"` |
 | Gemini CLI | terminal | `gemini mcp add --transport http graunt https://api.graunt.com/v1/mcp` |
 | Any stdio-only client | its MCP config | command `npx`, args `["-y", "mcp-remote", "https://api.graunt.com/v1/mcp"]` |
+
+Cline needs the `"type": "streamableHttp"` line. Without it Cline connects
+over SSE, which this server does not serve, and the connection fails.
 
 Graunt is also listed in the official
 [MCP registry](https://registry.modelcontextprotocol.io) as
