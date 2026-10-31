@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+### Added
+- Cline setup in the README's client table. The config carries
+  `"type": "streamableHttp"`: without it Cline falls back to SSE, which the
+  server does not serve.
+
 ### Changed
 - New tagline, "the agent-native marketplace for AI data", in the README, the
   plugin's display name and the marketplace description (was "agent-ready data").
